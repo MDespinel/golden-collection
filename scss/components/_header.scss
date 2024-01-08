@@ -1,0 +1,5 @@
+@import "../maps/maps.scss"
+
+.Titulo-header{
+    font-size: map-get($titulos, tamanio );
+}
