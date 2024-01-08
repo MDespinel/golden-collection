@@ -1,26 +1,42 @@
-@charset "UTF-8";
-.Titulo-header {
-  color: #f2d069;
+.boton-f {
+  display: flex;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 3px solid #f5c05d;
+  text-decoration: none;
+  color: #e4a837;
+  background-color: #19372b;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.boton-f:hover {
+  background-color: #3b6754;
+  border-color: #666;
 }
 
-.foto-fem {
+h1 {
+  font-size: 3rem;
+  color: #e4a837;
+}
+
+h2 {
+  font-size: 1.9rem;
+  text-decoration: underline;
+  color: #f5c05d;
+}
+
+.Main-boton .boton {
   display: flex;
-  flex-direction: column; /* Cambia la dirección a columnas */
-  align-items: left;
-  text-align: center;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 3px solid #f5c05d;
+  text-decoration: none;
+  color: #e4a837;
+  background-color: #19372b;
+  transition: background-color 0.3s, border-color 0.3s;
 }
-.foto-fem img {
-  width: 200px; /* Ajusta el ancho de la imagen según tus necesidades */
-  margin-bottom: 20px; /*%Espacio entre las imágenes */
-}
-.foto-fem h2 {
-  margin: 0;
-}
-.foto-fem .DescripcionGenetica {
-  margin-bottom: 20px; /* Espacio entre la descripción y el precio */
-}
-.foto-fem .Precio {
-  text-align: center; /* Centra el texto */
+.Main-boton .boton:hover {
+  background-color: #3b6754;
+  border-color: #666;
 }
 
 body {

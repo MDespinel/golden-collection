@@ -1,0 +1,17 @@
+@import "../maps/variable.scss";
+
+.boton-f{
+    display: flex;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 3px solid $color-subtitulos; // Definir un borde de 2px sólido de color negro
+    text-decoration: none;
+    color: $color-principal-titulos;
+    background-color: $color-fondo;
+    transition: background-color 0.3s, border-color 0.3s; // Agregar transición al cambio de color de fondo y borde
+
+    &:hover {
+      background-color: $color-fondo-sec;
+      border-color: #666; // Cambiar el color del borde al pasar el cursor sobre el botón
+    }
+}

@@ -1,5 +1,12 @@
-@import "../maps/maps.scss"
+@import "../maps/maps.scss";
 
-.Titulo-header{
+h1{
     font-size: map-get($titulos, tamanio );
-}
+    color: map-get($titulos,color);
+};
+
+h2{
+    font-size: map-get($geneticas, tamanio);
+    text-decoration: map-get($geneticas, decoracion);
+    color: map-get($geneticas,color);
+};

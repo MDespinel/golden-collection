@@ -1,4 +1,15 @@
+@import "./variable.scss";
+
 $titulos :(
-  tamanio: 10rem,
+  tamanio: 3rem,
   decoration:underline,
-)
+  color:$color-principal-titulos,
+
+);
+$geneticas :(
+    tamanio: 1.9rem,
+    decoracion:underline,
+    color:$color-subtitulos,
+    
+);
+

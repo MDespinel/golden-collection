@@ -1,23 +1,19 @@
-.foto-fem {
-    display: flex;
-    flex-direction: column; /* Cambia la dirección a columnas */
-    align-items: left;
-    text-align: center;
-  
-    img {
-      width: 200px; /* Ajusta el ancho de la imagen según tus necesidades */
-      margin-bottom: 20px; /*%Espacio entre las imágenes */
-    }
-  
-    h2 {
-      margin: 0;
-    }
-  
-    .DescripcionGenetica {
-      margin-bottom: 20px; /* Espacio entre la descripción y el precio */
-    }
-  
-    .Precio {
-      text-align: center; /* Centra el texto */
-    }
+@import "../maps/variable.scss";
+
+.Main-boton {
+  .boton {
+      display: flex;
+      margin: 10px;
+      padding: 10px 20px;
+      border: 3px solid $color-subtitulos; // Definir un borde de 2px sólido de color negro
+      text-decoration: none;
+      color: $color-principal-titulos;
+      background-color: $color-fondo;
+      transition: background-color 0.3s, border-color 0.3s; // Agregar transición al cambio de color de fondo y borde
+
+      &:hover {
+        background-color: $color-fondo-sec;
+        border-color: #666; // Cambiar el color del borde al pasar el cursor sobre el botón
+      }
   }
+}
