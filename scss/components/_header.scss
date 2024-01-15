@@ -1,5 +1,22 @@
 @import "../maps/maps.scss";
 
+.Main-boton {
+    .boton {
+      text-align: center;
+      display: inline-block; 
+      margin: 10px;
+      padding: 10px 20px;
+      border: 3px solid $color-subtitulos; 
+      text-decoration: none;
+      color: $color-principal-titulos;
+      background-color: $color-fondo;
+      transition: background-color 0.3s, border-color 0.3s; 
+      &:hover {
+        background-color: $color-fondo-sec;
+        border-color: #666; 
+      }
+    }
+  }
 h1{
     font-size: map-get($titulos, tamanio );
     color: map-get($titulos,color);
