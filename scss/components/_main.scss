@@ -10,27 +10,27 @@ p{
   justify-content: space-between;
 
   @media (max-width: $breakpoint) {
-    flex-direction: column; // Cambia a diseño de columna en pantallas pequeñas
+    flex-direction: column;
   }
 
   img {
-    max-width: $max-image-size; // Establece el tamaño máximo de la imagen
-    border: 3px solid $border-color; // Agrega un borde de 3px sólido de color claro
-    max-height: $max-image-size; // Establece el tamaño máximo de la imagen
+    max-width: $max-image-size;
+    border: 3px solid $border-color; 
+    max-height: $max-image-size;
 
     @media (max-width: $breakpoint) {
-      max-width: 100%; // Ajusta el ancho de la imagen para pantallas pequeñas
+      max-width: 100%; 
     }
   }
 
   h3, p {
-    order: 2; // Coloca el texto a la derecha
-    text-align: justify; // Justifica el texto
-    align-self: center; // Centra el texto en altura
+    order: 2;
+    text-align: justify;
+    align-self: center; 
 
     @media (max-width: $breakpoint) {
-      order: 1; // Coloca el texto arriba de la imagen en pantallas pequeñas
-      text-align: center; // Centra el texto en pantallas pequeñas
+      order: 1; 
+      text-align: center; 
     }
   }
 }
@@ -42,33 +42,33 @@ p{
   justify-content: flex-end;
 
   @media (max-width: $breakpoint) {
-    flex-direction: column; // Cambia a diseño de columna en pantallas pequeñas
+    flex-direction: column; 
   }
 
   img {
-    max-width: $max-image-size; // Establece el tamaño máximo de la imagen
-    border: 3px solid $border-color; // Agrega un borde de 3px sólido de color claro
-    max-height: $max-image-size; // Establece el tamaño máximo de la imagen
+    max-width: $max-image-size; 
+    border: 3px solid $border-color; 
+    max-height: $max-image-size; 
 
     @media (max-width: $breakpoint) {
-      max-width: 100%; // Ajusta el ancho de la imagen para pantallas pequeñas
+      max-width: 100%; 
     }
   }
 
   p {
-    order: 1; // Coloca el texto a la izquierda
-    text-align: justify; // Justifica el texto
+    order: 1; 
+    text-align: justify; 
     
-    align-self: center; // Centra el texto en altura
+    align-self: center; 
 
     @media (max-width: $breakpoint) {
-      order: 2; // Coloca el texto abajo de la imagen en pantallas pequeñas
-      text-align: center; // Centra el texto en pantallas pequeñas
+      order: 2; 
+      text-align: center; 
     }
   }
 
   img:nth-child(2) {
-    order: 2; // Coloca la segunda imagen a la derecha
+    order: 2; 
   }
 }
 //productos automaticas y fem//
@@ -155,5 +155,110 @@ p{
 
   @media (max-width: 768px) {
     max-width: 90%;
+  }
+}
+//contacto//
+.main-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  color: $color-subtitulos;
+
+  .logo.sn {
+      margin-right: 10px; 
+      img {
+        width: 50px;
+        height: 50px; 
+      }
+      p {
+        font-size: 14px; 
+        color: $color-principal-titulos; 
+      }
+    }
+  }
+
+  .contact-form {
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+
+      label {
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: $color-fondo-sec;
+        color: #333;
+        border: 3px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      button {
+        width: 300px;
+        padding: 10px 20px;
+        background-color: $color-fondo;
+        color: $color-principal-titulos;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        
+        &:hover {
+          background-color: #555;
+        }
+      }
+    }
+  }
+//carro de compras//
+.carro-de-compras {
+  background-color: $color-fondo;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  h2 {
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+
+  .items {
+    list-style: none;
+    padding: 0;
+    color: $color-subtitulos;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  .total {
+    margin-top: 20px;
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: $color-fondo;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: $color-fondo-sec;
+      }
+    }
   }
 }
