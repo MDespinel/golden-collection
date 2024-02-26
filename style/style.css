@@ -352,6 +352,42 @@ img:nth-child(2) {
   background-color: #555;
 }
 
+.VerificarEdad {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("/imagenes/foto1.jpg") center center fixed;
+  background-size: cover;
+  color: #e4a837;
+  text-shadow: 5px 5px 5px black;
+}
+.VerificarEdad #formulario {
+  text-align: center;
+}
+.VerificarEdad #formulario label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.VerificarEdad #formulario input {
+  padding: 10px;
+  font-size: 16px;
+}
+.VerificarEdad #formulario button {
+  width: 300px;
+  padding: 10px 20px;
+  background-color: #19372b;
+  color: #e4a837;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.VerificarEdad #formulario button:hover {
+  background-color: #555;
+}
+
 body {
   background-color: #19372b;
 }

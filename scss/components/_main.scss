@@ -281,3 +281,33 @@ $carousel-height: 60vh;
     }
   }
 
+  .VerificarEdad {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url("/imagenes/foto1.jpg") center center fixed;
+    background-size: cover;
+    color: $color-principal-titulos; 
+    text-shadow: 5px 5px 5px black;
+  
+    #formulario {
+      text-align: center;
+  
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
+  
+      input {
+        padding: 10px;
+        font-size: 16px;
+      }
+  
+      button {
+        @include button()
+        
+        }
+    }
+  }
